@@ -21,6 +21,6 @@ Entidades de la web:
   - Administrador
   - Usuario
   - Tematica de los libros
-  - 
-  -  
-  -
+  - Disponibilidad
+  - Devolucion 
+  

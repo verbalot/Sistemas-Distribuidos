@@ -7,7 +7,7 @@ La web consiste en la reserva de libros de libros online. La biblioteca tiene lo
   -	Cada usuario puede tener reservados solamente tres libros.
 Funciones públicas y privadas.
 Publicas:
-  -	El usuario solo tiene permiso para visualizar los libros y poder reservar un máximo de tres
+  -	El usuario solo tiene permiso para visualizar los libros y poder reservar un máximo de tres.
 Privadas:
   -	El administrador puede modificar datos del usuario, añadir y borrar libros.
 

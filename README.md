@@ -17,3 +17,10 @@ Integrantes del equipo de desarrollo:
   - Albino Aparicio Ormeño. Direccion correo: a.aparicioo@alumnos.urjc.es
   - Antonio Vizcaino Moraga. Direccion correo: a.vizcainom@alumnos.urjc.es
   - Cuenta de GitHub: https://github.com/verbalot/Sistemas-Distribuidos
+Entidades de la web:
+  - Administrador
+  - Usuario
+  - Tematica de los libros
+  - 
+  -  
+  -

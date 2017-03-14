@@ -18,9 +18,10 @@ Integrantes del equipo de desarrollo:
   - Cuenta de GitHub: https://github.com/verbalot/Sistemas-Distribuidos
   
 Nombre y descripción de cada una de las 4 o 5 entidades principales.
-  - Administrador
-  - Usuario
-  - Tematica de los libros
-  - Disponibilidad
-  - Devolucion 
+  - Administrador: Crea, modifica y elimina un usuario. También crea, modifica y elimina un libro.
+  - Usuario: El usuario tiene su propio login y un password.
+  - Persona: En esta tabla guardaremos los datos del usuario (nombre, apellido, direccion, telefono, email)
+  - Libro: En ella guardaremos el id del libro, el título, autor y género.
+  - Formulario Prestamo: Tabla en la que validaremos a un usuario, iniciamos un prestamo, consultamos el prestamo y por último lo finalizamos
+  - Prestamo: Guardaremos en esta tabla un código, fecha, un usuario y el libro.
   

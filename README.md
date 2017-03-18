@@ -21,6 +21,6 @@ La web consiste en la reserva de libros online e informacion sobre la actualidad
   - Antonio Vizcaino Moraga. Direccion correo: a.vizcainom@alumnos.urjc.es
   - Cuenta de GitHub: https://github.com/verbalot/Sistemas-Distribuidos
   
-# ESQUEMA DE NAVEGACION.
+# ESQUEMA DE NAVEGACIÓN.
  
   

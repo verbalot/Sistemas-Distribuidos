@@ -23,4 +23,5 @@ La web consiste en la reserva de libros online e información sobre la actualida
   
 # ESQUEMA DE NAVEGACIÓN.
  
-  
+## TABLERO TELLO
+<https://trello.com/b/YJ71OTlO.json>

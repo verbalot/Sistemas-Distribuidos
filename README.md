@@ -10,7 +10,7 @@ La web consiste en la reserva de libros online e informacion sobre la actualidad
  definir el idioma...(Público)
   - COLECCIONES Temas, infantil, artes, humanidades, autoayuda, ficción...(Público)
  mantenimiento de los recursos.(Privado)
-  - AYUDA Normativa para el uso de la aplicación, disfute de los libros, tiempo de espera para el alquiler, penalizaciones...(Público)
+  - AYUDA Normativa para el uso de la aplicación, disfute de los libros, tiempo de espera para el alquiler, penalizaciones...(Público).
   - MI CUENTA Es obligatorio inscribirse en la biblioteca para reservar libros seudónimo y contraseña.(Público)
  Acceso del cliente al alquiler, disponibilidad.(Privado)
  

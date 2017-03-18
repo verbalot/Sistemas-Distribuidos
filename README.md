@@ -1,7 +1,7 @@
 # PRÁCTICA SISTEMAS-DISTRIBUIDOS.
 
 # DESCRIPCIÓN.
-La web consiste en la reserva de libros online e informacion sobre la actualidad del mundo de los libros y premios el administrador gestiona la zona privada de los clientes y la actualización de los recursos. 
+La web consiste en la reserva de libros online e información sobre la actualidad del mundo de los libros y premios el administrador gestiona la zona privada de los clientes y la actualización de los recursos. 
 
 # ENTIDADES.
   - INICIO(Home) donde se encuentra el buscador que nos posibilita encontrar el libro por Autor o Titulo.(Público) 

@@ -21,7 +21,8 @@ La web consiste en la reserva de libros online e información sobre la actualida
   - Antonio Vizcaino Moraga. Direccion correo: a.vizcainom@alumnos.urjc.es
   - Cuenta de GitHub: https://github.com/verbalot/Sistemas-Distribuidos
   
-# ESQUEMA DE NAVEGACIÓN.
+# DIAGRAMA UML.
+  https://github.com/verbalot/Sistemas-Distribuidos/blob/master/Diagrama_UML.pdf
  
 ## TABLERO TELLO
 <https://trello.com/b/YJ71OTlO/Práctica Sistemas Distribuidos>

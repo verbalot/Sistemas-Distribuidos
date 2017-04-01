@@ -6,7 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Usuario {
+public class Acceso {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
@@ -14,10 +14,11 @@ public class Usuario {
 	private String login;
 	private String password;
 	
-	public Usuario(){
+	public Acceso(){
 		
 	}
-	public Usuario (String login, String password){
+	public Acceso (String login, String password){
+		super();
 		this.login = login;
 		this.password = password;
 	}
@@ -39,7 +40,7 @@ public class Usuario {
 	}
 	
 	@Override
-	public String toString(){
-		return "Usuario: " + this.login + ". Password"+ this.password; 
+	public String toString(){ 
+		return "Acceso [login=" + login + ", password=" + password + "]";
 	}
 }

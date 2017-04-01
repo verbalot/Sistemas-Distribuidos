@@ -26,7 +26,15 @@ public class TablonController {
 		repository.save(new Acceso("Pepe", "1234567"));
 		repository.save(new Acceso("Juan", "hola123"));
 	}
+	@RequestMapping("/")
+	public String presentacion(Model model, Pageable page) {
+
+		model.addAttribute("acceso", repository.findAll(page));
+
+		return "presentacion";
+	}
 	
 	
 
 }
+

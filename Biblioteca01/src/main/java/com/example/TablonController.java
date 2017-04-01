@@ -21,11 +21,13 @@ public class TablonController {
 	@Autowired
 	private AccesoRepository repository;
 	
+	
 	@PostConstruct
 	public void init() {
 		repository.save(new Acceso("Pepe", "1234567"));
 		repository.save(new Acceso("Juan", "hola123"));
 	}
+	
 	@RequestMapping("/")
 	public String presentacion(Model model, Pageable page) {
 
@@ -34,7 +36,17 @@ public class TablonController {
 		return "presentacion";
 	}
 	
+	@RequestMapping("/usuario/nuevo")
+	public String nuevoUsuario(Model model, Acceso usuario) {
+
+		repository.save(usuario);
+
+		return "usuario_guardado";
+
+	}
+	
 	
 
 }
+
 

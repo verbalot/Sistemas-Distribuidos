@@ -19,7 +19,13 @@ public class TablonController {
 	
 	
 	@Autowired
-	private AccesosRepository repository;
+	private AccesoRepository repository;
+	
+	@PostConstruct
+	public void init() {
+		repository.save(new Acceso("Pepe", "1234567"));
+		repository.save(new Acceso("Juan", "hola123"));
+	}
 	
 	
 

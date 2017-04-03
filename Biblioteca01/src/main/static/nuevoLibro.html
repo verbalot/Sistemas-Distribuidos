@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Nuevo Libro</title>
+</head>
+<body>
+	<form action="/libro/nuevo" method="post">
+		<h2>Informacion del Libro</h2>
+		<p>
+			Titulo: <input type='text' name='titulo' />
+		</p>
+		<p>
+			Autor: <input type='text' name='autor' />
+		</p>
+		<p>
+			Materia: <input type='text' name='materia' />
+		</p>
+		<p>
+			<a href="/libro_guardado"> 
+			<input type='submit' value='Guardar' />
+			</a>
+		</p>
+
+	</form>
+			<p>
+			<a href="/catalogo"> <input type='submit' value='Salir sin guardar' /></a>
+		</p>
+		<p>
+			<a href="/presentacion"> <input type='submit' value='Ir a Pagina Principal' /></a>
+		</p>
+</body>
+</html>

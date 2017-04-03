@@ -10,7 +10,7 @@ public class Acceso {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-
+	
 	private String login;
 	private String password;
 	

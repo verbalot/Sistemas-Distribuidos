@@ -21,11 +21,17 @@ public class TablonController {
 	@Autowired
 	private AccesoRepository repository;
 	
+	@Autowired
+	private AltaLibroRepository altalibrorepository;
+	
 	
 	@PostConstruct
 	public void init() {
 		repository.save(new Acceso("Pepe", "1234567"));
 		repository.save(new Acceso("Juan", "hola123"));
+		
+		altalibrorepository.save(new AltaLibro("Algebra Lineal","E.Santos","Matematicas"));
+		altalibrorepository.save(new AltaLibro("Fisica Cuantica","Garcia","Ciencia"));
 	}
 	
 	@RequestMapping("/")
@@ -35,6 +41,7 @@ public class TablonController {
 
 		return "presentacion";
 	}
+		
 	
 	@RequestMapping("/usuario/nuevo")
 	public String nuevoUsuario(Model model, Acceso usuario) {
@@ -45,8 +52,14 @@ public class TablonController {
 
 	}
 	
+	@RequestMapping("/libro/nuevo")
+	public String nuevoLibro(Model model, AltaLibro libro) {
+
+		altalibrorepository.save(libro);
+
+		return "libro_guardado";
+
+	}
 	
 
 }
-
-

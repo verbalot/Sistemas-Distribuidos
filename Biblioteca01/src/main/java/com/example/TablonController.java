@@ -61,5 +61,13 @@ public class TablonController {
 
 	}
 	
+	@RequestMapping("/catalogo")
+	public String ListaLibros(Model model) {
+		
+		model.addAttribute("libros", altalibrorepository.findAll());
+		return "catalogos";
+
+	}
+	
 
 }

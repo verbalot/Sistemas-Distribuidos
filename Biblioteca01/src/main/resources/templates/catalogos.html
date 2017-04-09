@@ -1,0 +1,11 @@
+<html>
+<body>
+	<h1>Catalogo de Libros</h1>
+	{{#libros}}
+	<br>
+	<a href="ver_libro/{{-index}}">{{materia}} ---|--- {{titulo}} ---|--- {{autor}} </a>
+	
+	<br> {{/libros}}
+	<a href="/nuevoLibro.html">Nuevo libro</a>
+</body>
+</html>

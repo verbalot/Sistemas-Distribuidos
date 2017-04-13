@@ -29,14 +29,30 @@ public class TablonController {
 	public void init() {
 		Acceso a1 = new Acceso ("Pepe","1234567","ROLE_USER");
 		Acceso a2 = new Acceso ("Juan","8957@","ROLE_USER");
+		Acceso a3 = new Acceso ("Alberto","sol78","ROLE_USER");
+		Acceso a4 = new Acceso ("Carlos","ventana10","ROLE_USER");
 		Acceso admin = new Acceso ("jesus","1234","ROLE_ADMIN");
+		
+		AltaLibro alt1 = new AltaLibro("Algebra Lineal","E.Santos","Matematicas");
+		AltaLibro alt2 = new AltaLibro("Fisica Cuantica","Garcia","Ciencia");
+		AltaLibro alt3 = new AltaLibro("El señor de las moscas","William Golding","Literatura");
+		AltaLibro alt4 = new AltaLibro("Viaje al centro de la tierra","Julio Verne","Ciencia Ficcion");
+		AltaLibro alt5 = new AltaLibro("Don Quijote de la Mancha","Miguel de Cervantes","Aventuras");
+		AltaLibro alt6 = new AltaLibro("El viejo y el mar","Ernest Hemingway","Aventuras");
 		
 		repository.save(a1);
 		repository.save(a2);
+		repository.save(a3);
+		repository.save(a4);
 		repository.save(admin);
 		
-		altalibrorepository.save(new AltaLibro("Algebra Lineal","E.Santos","Matematicas"));
-		altalibrorepository.save(new AltaLibro("Fisica Cuantica","Garcia","Ciencia"));
+		altalibrorepository.save(alt1);
+		altalibrorepository.save(alt2);
+		altalibrorepository.save(alt3);
+		altalibrorepository.save(alt4);
+		altalibrorepository.save(alt5);
+		altalibrorepository.save(alt6);
+		
 	}
 	
 	@RequestMapping("/")

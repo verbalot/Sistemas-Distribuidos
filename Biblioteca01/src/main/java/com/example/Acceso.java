@@ -1,5 +1,7 @@
 package com.example;
 
+import javax.persistence.ElementCollection;
+import javax.persistence.FetchType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +14,10 @@ public class Acceso {
 	private long id;
 	
 	private String login;
-	private String password;
+	private String passwordHash;
+	
+	@ElementCollection(fetch = FetchType.EAGER)
+	private List<String> roles;
 	
 	public Acceso(){
 		
@@ -20,7 +25,7 @@ public class Acceso {
 	public Acceso (String login, String password){
 		super();
 		this.login = login;
-		this.password = password;
+		this.passwordHash = password;
 	}
 	
 	public String getLogin() {
@@ -32,15 +37,15 @@ public class Acceso {
 	}
 	
 	public String getPassword() {
-		return password;
+		return passwordHash;
 	}
 	
 	public void setPassword(String password) {
-		this.password = password;
+		this.passwordHash = password;
 	}
 	
 	@Override
 	public String toString(){ 
-		return "Acceso [login=" + login + ", password=" + password + "]";
+		return "Acceso [login=" + login + ", password=" + passwordHash + "]";
 	}
 }

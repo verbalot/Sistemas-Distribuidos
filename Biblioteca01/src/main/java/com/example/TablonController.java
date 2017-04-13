@@ -27,8 +27,13 @@ public class TablonController {
 	
 	@PostConstruct
 	public void init() {
-		repository.save(new Acceso("Pepe", "1234567"));
-		repository.save(new Acceso("Juan", "hola123"));
+		Acceso a1 = new Acceso ("Pepe","1234567","ROLE_USER");
+		Acceso a2 = new Acceso ("Juan","8957@","ROLE_USER");
+		Acceso admin = new Acceso ("jesus","1234","ROLE_ADMIN");
+		
+		repository.save(a1);
+		repository.save(a2);
+		repository.save(admin);
 		
 		altalibrorepository.save(new AltaLibro("Algebra Lineal","E.Santos","Matematicas"));
 		altalibrorepository.save(new AltaLibro("Fisica Cuantica","Garcia","Ciencia"));

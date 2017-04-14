@@ -16,10 +16,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 		
 		// Paginas publicas
-		http.authorizeRequests().antMatchers("/").permitAll();
+		//http.authorizeRequests().antMatchers("/").permitAll();
 		
 		// Paginas privadas
-		http.authorizeRequests().antMatchers("/").hasAnyRole("USER","ADMIN");
+		//http.authorizeRequests().antMatchers("/").hasAnyRole("USER","ADMIN");
 	}
 	
 	@Override

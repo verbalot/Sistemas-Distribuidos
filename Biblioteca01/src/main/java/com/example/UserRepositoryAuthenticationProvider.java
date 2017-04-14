@@ -26,7 +26,30 @@ public class UserRepositoryAuthenticationProvider implements AuthenticationProvi
 	
 	@Override
 	public Authentication authenticate(Authentication auth) throws AuthenticationException {
+		Acceso acceso = accesoRepository.findByLogin(auth.getName());
+		
+		//Comprobamos si el usuario existe
+		if (acceso == null){
+			throw new BadCredentialsException("Usuario no encontrado");
+		}
+		
+		// Comprobamos si el password es correcto
+		String password = (String) auth.getCredentials();
+	    //Comparo las dos contraseñas, la almacenada y la escrita
+		if (!new BCryptPasswordEncoder().matches(password, acceso.getPassword())) {
+		throw new BadCredentialsException("Usuario o password incorrecto");
+		}
+		
+		return new UsernamePasswordAuthenticationToken(acceso.getLogin(), password);
+		
+	}
+	
+	@Override
+	public boolean supports(Class<?> authenticationObject) {
+		return true;
 	}
 
 }
+
+
 

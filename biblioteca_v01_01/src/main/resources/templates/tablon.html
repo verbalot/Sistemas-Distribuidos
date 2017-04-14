@@ -1,0 +1,17 @@
+<html>
+<body>
+	<h2>Catalogo</h2>
+	{{#libros}}
+	<p>{{autor}} ---||||--- {{titulo}}</p>
+	{{/libros}}
+<body>
+	<form action="tablonInterno" method="post">
+		<p>
+			Login: <input type='text' name='titulo' /> Password: <input
+				type='text' name='autor' /> <input type='submit' value='Enviar' />
+	</form>
+	<br>
+	<a href="/tablonAdministrador">
+	<input type='submit' value='Administrador' /></a>
+</body>
+</html>

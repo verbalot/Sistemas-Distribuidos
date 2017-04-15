@@ -10,6 +10,7 @@ public class Prestamo {
 	private Date fechaInicio;
 	private Date fechaCierre;
 	private String comentario;
+	private boolean libre;
 
 	public Prestamo() {
 
@@ -79,5 +80,13 @@ public class Prestamo {
 	public String toString() {
 		return "Prestamo: " + idPrestamo + ". Relativo al libro: " + idLibro + ", del usuario" + idUsuario
 				+ ". Inicio del Prestamo: " + fechaInicio + " y finaliza/do: " + fechaCierre;
+	}
+
+	public boolean isLibre() {
+		return libre;
+	}
+
+	public void setLibre(boolean libre) {
+		this.libre = libre;
 	}
 }

@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+	<form action="libro/{{num}}/modificar" method="post">
+		<p>
+			Titulo: <input type='text' name='titulo' value="{{libro.titulo}}"/>
+		</p>
+		<p>
+			Autor:<input type='text' name='autor' value="{{libro.autor}}"/>
+		</p>
+		<p>
+			Genero: <input type='text' name='genero' value="{{libro.genero}}"/>
+		
+		<input type='submit' value='Guardar' /></p>
+	</form>
+	<a href="/tablonAdministrador"> <input type='submit' value='Menu Administrador' /></a>
+	<a href="/"> <input type='submit' value='Salir' /></a>
+</body>
+</html>

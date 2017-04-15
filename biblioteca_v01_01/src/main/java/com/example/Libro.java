@@ -1,7 +1,7 @@
 package com.example;
 
 public class Libro {
-	//private Long idLibro;
+	private Long idLibro;
 	private String titulo;
 	private String autor;
 	private String genero;
@@ -55,5 +55,11 @@ public class Libro {
 	@Override
 	public String toString() {
 		return "Titulo: " + titulo + " [" + autor + "] - Genero: " + genero;
+	}
+	public Long getIdLibro() {
+		return idLibro;
+	}
+	public void setIdLibro(Long idLibro) {
+		this.idLibro = idLibro;
 	}
 }

@@ -45,18 +45,6 @@ public class TablonController {
 		return "tablonAdministrador";
 	}
 
-	/*
-	 * @RequestMapping("/libro/{num}") 
-	 * public String modificarLibro(Model model, @PathVariable int num) {
-	 * 
-	 * Libro libro = libros.get(num - 1);
-	 * 
-	 * model.addAttribute("libro", libro);
-	 * 
-	 * return "modificarLibro";
-	 * 
-	 * }
-	 */
 	@RequestMapping("/libro/nuevo")
 	public String nuevoLibro(Model model, Libro libro) {
 		String cadena = "libro_guardado";
@@ -69,7 +57,17 @@ public class TablonController {
 		return cadena;
 
 	}
+	/*
+	@RequestMapping("/libro/{num}")
+	public String verLibroAdministrador(Model model, @PathVariable int num) {
 
+		Libro libro = libros.get(num - 1);
+
+		model.addAttribute("libro", libro);
+
+		return "ver_libro_administrador";
+	}
+*/
 	@RequestMapping("/libro/{num}")
 	public String verLibro(Model model, @PathVariable int num) {
 
@@ -78,5 +76,25 @@ public class TablonController {
 		model.addAttribute("libro", libro);
 
 		return "ver_libro";
+	}
+	
+	@RequestMapping("/libroAdministrador/{num}")
+	public String verLibroAdministrador(Model model, @PathVariable int num) {
+
+		Libro libro = libros.get(num - 1);
+
+		model.addAttribute("libro", libro);
+
+		return "ver_libro_administrador";
+	}
+	
+	@RequestMapping("/libroAdministrador/{num}/modificar")
+	public String modificarLibro(Model model, @PathVariable int num) {
+
+		Libro libro = libros.get(num - 1);
+
+		model.addAttribute("libro", libro);
+
+		return "modificarLibro";
 	}
 }
